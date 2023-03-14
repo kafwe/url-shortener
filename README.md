@@ -15,6 +15,7 @@ The API has the following endpoints:
 - Express.js
 - MongoDB
 - Docker
+- Pug
 
 ## Getting Started
 
