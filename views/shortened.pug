@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Shortened URL
+    link(rel='icon', type='image/png', href='https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png')
+    link(href='/public/style.css', rel='stylesheet', type='text/css')
+  body
+    h1 URL Shortener Microservice
+    main
+      section
+        p Original URL: 
+          a(href=originalUrl) #{originalUrl}
+        p Shortened URL: 
+          a(href=shortUrl, target='_blank') #{shortUrl}
+    footer
+          p Go 
+            a(href='/') home
