@@ -1,18 +1,13 @@
 # URL Shortener Microservice
 
-This project is a RESTful API for exercise tracking. Users can create an account, log exercises they have done, and view their exercise history. The API also includes optional query parameters for filtering exercise logs.
+This project is a RESTful API for URL shortening. Users can POST a long URL to the API and receive a shortened URL as a response. The API also includes an endpoint for redirecting users from the shortened URL to the original URL. If a user provides an invalid URL, the API returns an error message.
 
 ## API Endpoints
 
 The API has the following endpoints:
 
-- `POST /api/users`: creates a new user account
-- `GET /api/users`: retrieves a list of all users
-- `POST /api/users/:id/exercises`: logs a new exercise for a specific user
-- `GET /api/users/:id/logs`: retrieves the exercise history for a specific user. The exercise logs can be filtered using the following optional query parameters:
-  - `from`: Retrieve exercises starting from this date (YYYY-MM-DD)
-  - `to`: Retrieve exercises up to and including this date (YYYY-MM-DD)
-  - `limit`: Limit the number of exercises returned
+- `POST /api/shorturl`: accepts a long URL and returns a shortened URL
+- `GET /<short_url>`: redirects the user to the original URL associated with the given short URL
 
 ## Technologies Used
 
@@ -30,7 +25,7 @@ The API has the following endpoints:
 ```
 git clone https://github.com/kafwe/url-shortener.git
 
-cd exercise-tracker
+cd url-shortener
 ```
 
 2. Create a `.env` file in the root of the project and add the following environment variables:
