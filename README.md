@@ -1,6 +1,6 @@
 # URL Shortener Microservice
 
-This project is a RESTful API for URL shortening. Users can POST a long URL to the API and receive a shortened URL as a response. The API also includes an endpoint for redirecting users from the shortened URL to the original URL. If a user provides an invalid URL, the API returns an error message.
+This project is a RESTful API for shortening URLs. Users can POST a long URL to the API and receive a shortened URL as a response. The API also includes an endpoint for redirecting users from the shortened URL to the original URL. If a user provides an invalid URL, the API returns an error message.
 
 ## API Endpoints
 
